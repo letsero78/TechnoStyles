@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="reply" onclick="goBack()">
+        <i class="fa-solid fa-reply"></i>
+    </div>
+    <script src="JavaScript/App.js"></script> 
+    </script>
+    <div class="container">
+        <div class="login-box">
+            <h2>Acceder</h2>
+           
+            <form id="login-form" action="pagina web1.1.html" method="POST">
+                <div class="textbox">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Usuario" name="username" required>
+                </div>
+                <div class="textbox">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" checked name="acepto" id="acepto" class="terminos">
+                    <label for="acepto" class="terminos">Acepto términos, condiciones y políticas de privacidad</label>
+                </div>
+                <button type="submit" class="btn1" form="login-form">Iniciar Sesión</button>
+            </form>
+            <form id="signup-form" action="Login2.html" method="POST">
+                <button type="submit" class="btn" form="signup-form">Crear Cuenta</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

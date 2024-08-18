@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="style.css/Registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="reply" onclick="goBack()">
+    <i class="fa-solid fa-reply"></i>
+</div>
+<script src="JavaScript/App.js"></script> 
+<body id="login">
+    <form action="php/registro_usuario_be.php" method="POST">
+        <h1>Crear Cuenta</h1>
+        
+        <fieldset id="logindatos">
+
+            <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text"  value="" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="control" placeholder="Nombre" required  name="nombre"/>
+            </div>  
+
+            <div class="input-container">
+                <i class="fa-solid fa-phone"></i>
+                <input name="numero_de_telefono" type="tel" id="tel" value="" pattern="^[0-9]{4}-?[0-9]{4}+$" title="Solo se acepta formato:2222-2222" class="control" placeholder="Numero de telefono" required />
+            </div>
+
+            <div class="input-container">
+                <i class="fa-solid fa-envelope-open"></i>
+                <input name="correo" type="correo" id="correo" value="" pattern="^[0-9]{4}-?[0-9]{4}+$" title="NombreCorreo@dominio" class="control" placeholder="Correo" required />
+            </div>
+
+            <div class="input-container">
+                <i class="fa-solid fa-lock"></i>
+                <input name="contrasena" type="contraseña" id="password" value="" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})" title="su contraseña debe ser de 6 a 15 caracteres y deben de incluir una letra mayuscula, minuscula y un numero" class="control" placeholder="Contraseña" required />
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" checked name="acepto">
+                <p>Acepto términos, condiciones y políticas de privacidad</p>
+            </div>
+
+            <button>Crear Cuenta</button>
+        </fieldset>
+    </form>
+</body>
+</html>

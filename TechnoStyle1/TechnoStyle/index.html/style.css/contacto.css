@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    flex: 1; /* Hace que el contenedor ocupe el espacio restante */
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i {
+    color: rgb(20, 77, 143);
+    margin-right: 10px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(17, 22, 104);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background: #e39403;
+}
+
+.reply {
+    position: absolute; /* Posicionamiento absoluto */
+    left: 350px; /* Centra horizontalmente */
+    top: 100px; /* Ajusta este valor para bajarlo más */
+    transform: translateX(-50%); /* Ajuste para centrar el icono */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    font-size: 24px; /* Tamaño del icono */
+    color: blue; /* Color del icono */
+}
+
+footer {
+    margin-top: auto; /* Mueve el footer al final de la página */
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    text-align: left; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.footer-section {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.footer-section:last-child {
+    margin-right: 0; 
+}
+
+.logo2 {
+    margin-left: auto;
+    margin-top: 10px; 
+}
+
+.logo2 img {
+    width: 100px; 
+    height: auto; 
+}
+
+.social-icons {
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 30px; 
+    color: #007bff;
+}
+
+.footer-section a {
+    color: #000; 
+    text-decoration: none; 
+}
+
+.footer-section a:hover {
+    color: #007bff; 
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px; 
+}
